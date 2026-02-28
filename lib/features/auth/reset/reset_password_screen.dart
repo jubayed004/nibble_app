@@ -1,0 +1,110 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class ResetPasswordScreen extends StatefulWidget {
+  final String token;
+  const ResetPasswordScreen({super.key, required this.token});
+
+  @override
+  State<ResetPasswordScreen> createState() => _ResetPasswordScreenState();
+}
+
+class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
+  final _formKey = GlobalKey<FormState>();
+  final TextEditingController _resetPassword = TextEditingController();
+  final TextEditingController _resetConfirmPassword = TextEditingController();
+  @override
+  void dispose() {
+    _resetPassword.dispose();
+    _resetConfirmPassword.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        /*        scrolledUnderElevation: 0,
+        centerTitle: true,
+        title: Text(
+          AppStrings.resetPassword.tr,
+          style: context.headlineSmall.copyWith(color: AppColors.primaryBlue),
+        ),*/
+      ),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          padding: EdgeInsets.symmetric(vertical: 20.h, horizontal: 16.w),
+          child: Form(
+            key: _formKey,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                /*               /// ---------- MAIN TITLE ----------
+                Text(
+                  AppStrings.createNewPassword.tr,
+                  textAlign: TextAlign.center,
+                  style: context.headlineSmall,
+                ),
+                Gap(12.h),
+
+                /// ---------- SUBTITLE ----------
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 10.w),
+                  child: Text(
+                    AppStrings.createNewPasswordTitle.tr,
+                    textAlign: TextAlign.center,
+                    style: context.bodyMedium.copyWith(
+                      color: AppColors.hintTextColor,
+                    ),
+                  ),
+                ),
+                Gap(32.h),
+
+                /// ---------- New Password Input ----------
+                CustomTextField(
+                  title: AppStrings.newPassword.tr,
+                  hintText: AppStrings.enterYourNewPassword.tr,
+                  keyboardType: TextInputType.text,
+                  prefixIcon: const Icon(Icons.lock_outline),
+                  isPassword: true,
+                  controller: _resetPassword,
+                  validator: TextFieldValidator.password(),
+                ),
+                Gap(16.h),
+
+                /// ---------- Confirm Password ----------
+                CustomTextField(
+                  title: AppStrings.confirmNewPassword.tr,
+                  hintText: AppStrings.confirmYourNewPassword.tr,
+                  keyboardType: TextInputType.text,
+                  prefixIcon: const Icon(Icons.lock_outline),
+                  isPassword: true,
+                  controller: _resetConfirmPassword,
+                  validator: TextFieldValidator.confirmPassword(_resetPassword),
+                ),
+                Gap(40.h),
+
+                /// ---------- Confirm Button ----------
+                Obx(
+                  () => CustomButton(
+                    text: AppStrings.resetPassword.tr,
+                    isLoading: _auth.resetPasswordLoading.value,
+                    onTap: () {
+                      AppRouter.route.goNamed(RoutePath.loginScreen);
+                      // if (_formKey.currentState!.validate()) {
+                      //   _auth.resetPassword(
+                      //     password: _resetPassword.text,
+                      //     token: widget.token,
+                      //   );
+                      // }
+                    },
+                  ),
+                ),*/
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
