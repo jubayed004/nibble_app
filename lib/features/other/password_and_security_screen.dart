@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:nibble_app/core/router/route_path.dart';
-import 'package:nibble_app/core/router/routes.dart';
 import 'package:nibble_app/features/other/widgets/settings_disclosure_item.dart';
 import 'package:nibble_app/share/widgets/custom_buttom_sheet/custom_buttom_sheet.dart';
 import 'package:nibble_app/utils/color/app_colors.dart';

@@ -6,7 +6,6 @@ import 'package:nibble_app/core/custom_assets/assets.gen.dart';
 import 'package:nibble_app/core/router/route_path.dart';
 import 'package:nibble_app/share/widgets/button/custom_back_button.dart';
 import 'package:nibble_app/share/widgets/button/custom_button.dart';
-import 'package:nibble_app/share/widgets/custom_image/custom_image.dart';
 import 'package:nibble_app/utils/app_strings/app_strings.dart';
 import 'package:nibble_app/utils/color/app_colors.dart';
 import 'package:nibble_app/utils/extension/base_extension.dart';

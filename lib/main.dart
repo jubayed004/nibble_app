@@ -3,7 +3,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:nibble_app/share/controller/language_controller.dart';
 
 import 'core/router/routes.dart';
 import 'core/theme/light_theme.dart';

@@ -13,7 +13,6 @@ import 'package:nibble_app/share/widgets/text_field/custom_text_field.dart';
 import 'package:nibble_app/utils/app_strings/app_strings.dart';
 import 'package:nibble_app/utils/color/app_colors.dart';
 import 'package:nibble_app/features/auth/controller/auth_controller.dart';
-import 'package:nibble_app/utils/enum/app_enum.dart';
 import 'package:nibble_app/utils/extension/base_extension.dart';
 
 class SignUpScreen extends ConsumerStatefulWidget {

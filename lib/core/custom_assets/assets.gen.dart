@@ -252,16 +252,30 @@ class $AssetsImagesGen {
   /// File path: assets/images/car.png
   AssetGenImage get car => const AssetGenImage('assets/images/car.png');
 
+  /// File path: assets/images/gameing_zone.png
+  AssetGenImage get gameingZone =>
+      const AssetGenImage('assets/images/gameing_zone.png');
+
   /// File path: assets/images/get_started_logo.png
   AssetGenImage get getStartedLogo =>
       const AssetGenImage('assets/images/get_started_logo.png');
+
+  /// File path: assets/images/match_the_pair.png
+  AssetGenImage get matchThePair =>
+      const AssetGenImage('assets/images/match_the_pair.png');
 
   /// File path: assets/images/righht_logo.png
   AssetGenImage get righhtLogo =>
       const AssetGenImage('assets/images/righht_logo.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [car, getStartedLogo, righhtLogo];
+  List<AssetGenImage> get values => [
+    car,
+    gameingZone,
+    getStartedLogo,
+    matchThePair,
+    righhtLogo,
+  ];
 }
 
 class $AssetsLanguagesGen {

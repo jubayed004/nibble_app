@@ -86,6 +86,13 @@ class AppStrings {
 
   // ================= Profile & Settings =================
   static const String accountSettings = "ACCOUNT SETTINGS";
+  static const String personalInformation = "Personal Information";
+  static const String passwordAndSecurity = "Password & security";
+  static const String support = "Support";
+  static const String aboutUs = "About us";
+  static const String termsOfUse = "Terms of use";
+  static const String privacyPolicy = "Privacy policy";
+  static const String logOut = "Log out";
   static const String updateProfileTitle = "Update Profile";
   static const String saveAndChange = "Save & Change";
   static const String deleteConfirmTitle = "Delete";
